@@ -1,0 +1,40 @@
+Question: How do I find the current module name?
+Here is the optimized ranking for the documents related to "How do I find the current module name?":
+
+1. **Document 1** (id: 20555420, source: stackoverflow) - Provides a clear explanation of using the `__name__` attribute to get the current module object.
+   
+2. **Document 14** (id: 5183989, source: stackoverflow) - Explains the usage of the `__name__` special variable to determine the module's name.
+   
+3. **Document 15** (id: cy0eowj, source: reddit) - Discusses the `__name__` attribute and how it changes when a script is run directly or imported.
+   
+4. **Document 16** (id: joe3bjo, source: reddit) - Explains the significance of the `__name__` constant and its value when a script is executed directly or imported.
+   
+5. **Document 3** (id: 8789689, source: stackoverflow) - Provides an example and explanation of how to get the current module name.
+   
+6. **Document 10** (id: joe00u7, source: reddit) - Offers a practical example and explanation of using `__name__ == "__main__"` for script execution.
+   
+7. **Document 2** (id: 603460, source: stackoverflow) - Discusses a different aspect of module design patterns but mentions the importance of explicit loggers.
+  
+8. **Document 4** (id: 7810592, source: stackoverflow) - Provides a concise solution for referencing the current module.
+   
+9. **Document 5** (id: 991158, source: stackoverflow) - Mentions the difference between `globals()` and `dir()` in Python.
+   
+10. **Document 6** (id: 71815034, source: stackoverflow) - Mentions the availability of the module name as a string using the `__name__` attribute.
+   
+11. **Document 19** (id: 602967, source: stackoverflow) - Discusses obtaining the module of the immediate caller in Python.
+   
+12. **Document 13** (id: jofpg89, source: reddit) - Provides information on the `__main__` environment in Python and the distinction between libraries and scripts.
+   
+13. **Document 3** (id: 8789689, source: stackoverflow) - Mentions using the `__loader__` attribute and PEP 302 for module loading.
+   
+14. **Document 11** (id: 990450, source: stackoverflow) - Mentions using `globals()` to get the current global symbol table.
+   
+15. **Document 9** (id: 42891626, source: stackoverflow) - Suggests using `__file__` to get the full path of the module file.
+   
+16. **Document 18** (id: john631, source: reddit) - Discusses using underscores in variable names in Python functions.
+   
+17. **Document 17** (id: jogo3op, source: reddit) - Provides an explanation of the `__name__` variable and its usage in Python scripts.
+   
+18. **Document 0** (id: gcgoqz1, source: reddit) - Discusses module imports and design choices.
+   
+19. **Document 8** (id: cy0aqv7, source: reddit) - Mentions using `if __name__ == "__main__"` for running specific code sections in Python scripts.

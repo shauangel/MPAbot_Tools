@@ -1,0 +1,25 @@
+Question: Why does -22 // 10 return -3?
+Based on the content provided, here is the suggested ranking for the documents related to the question "Why does -22 // 10 return -3?":
+
+1. Document 0 (id: 15395350, source: stackoverflow)
+2. Document 4 (id: 19413849, source: stackoverflow)
+3. Document 7 (id: d480tny, source: reddit)
+4. Document 11 (id: dcbd37q, source: reddit)
+5. Document 13 (id: d4811k6, source: reddit)
+6. Document 2 (id: 2_5248092_2, source: codeproject)
+7. Document 3 (id: 2_5304934_1, source: codeproject)
+8. Document 5 (id: 2_5304933_1, source: codeproject)
+9. Document 6 (id: 2_1098192_7, source: codeproject)
+10. Document 12 (id: 2_5296377_1, source: codeproject)
+11. Document 14 (id: 2_5308639_1, source: codeproject)
+12. Document 16 (id: 2_5351522_2, source: codeproject)
+13. Document 10 (id: fnkmhup, source: reddit)
+14. Document 15 (id: i96cw8s, source: reddit)
+15. Document 1 (id: 10844242, source: stackoverflow)
+16. Document 8 (id: 36878220, source: stackoverflow)
+17. Document 9 (id: 69052571, source: stackoverflow)
+18. Document 17 (id: 54189057, source: stackoverflow)
+19. Document 18 (id: 69514859, source: stackoverflow)
+20. Document 19 (id: 54189070, source: stackoverflow) 
+
+This ranking is based on the relevance of the content to the question asked and the clarity of the explanation provided in each document.

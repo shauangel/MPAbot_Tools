@@ -1,0 +1,25 @@
+Question: Is there a source code level debugger with breakpoints, single-stepping, etc.?
+Based on the context of the question "Is there a source code level debugger with breakpoints, single-stepping, etc.?", the documents can be ranked as follows:
+
+1. Document 1 (source: reddit) - Provides information about using Python's built-in debugger `pdb` for setting breakpoints and single-stepping through code.
+2. Document 3 (source: codeproject) - Mentions using the debug window in Microsoft for setting breakpoints without needing to attach an additional debugger.
+3. Document 7 (source: reddit) - Recommends switching to an IDE like PyCharm for convenient debugging features.
+4. Document 5 (source: stackoverflow) - Discusses GDB for debugging Python scripts and the Cython project for mixed Python/C/Cython debugging.
+5. Document 8 (source: stackoverflow) - Provides an approach for running code under gdb for debugging.
+6. Document 19 (source: reddit) - Discusses the use of print statements for debugging and mentions the Python `Logging` module as an alternative.
+7. Document 10 (source: reddit) - Mentions using Thonny's debugging feature for Python code.
+8. Document 14 (source: reddit) - Suggests using pythontutor.com for step-by-step code execution visualization.
+9. Document 18 (source: stackoverflow) - Mentions a setting in VSCode to stop at breakpoints.
+10. Document 4 (source: reddit) - Mentions using the Python `trace` module for tracing code execution.
+11. Document 0 (source: codeproject) - Provides general information about debugging depending on the platform.
+12. Document 2 (source: codeproject) - Mentions using WinDebug for debugging on Windows and analyzing program behavior.
+13. Document 16 (source: stackoverflow) - Contains a long post discussing debugging experiences with gdb in Python.
+14. Document 17 (source: stackoverflow) - Talks about creating a plugin for Notepad++ for debugging functionality.
+15. Document 11 (source: reddit) - Mentions tools like birdseye and snoop for code analysis.
+16. Document 13 (source: reddit) - Provides a YouTube link for debugging resources.
+17. Document 6 (source: reddit) - Discusses using a debugger as an alternative to manual log statements.
+18. Document 15 (source: stackoverflow) - Contains incomplete information about debugging in VSCode.
+19. Document 12 (source: reddit) - Encourages learning how to use a debugger for monitoring program state during execution.
+20. Document 9 (source: reddit) - Mentions using the `breakpoint()` function in Python for debugging.
+
+This ranking is based on the relevance of the information provided to the query about source code level debugging with breakpoints and single-stepping.

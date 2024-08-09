@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/index.css') }}">
+  <title>MPAbot Easy Demo</title>
+</head>
+<body>
+  <h1>MPAbot</h1>
+  <div class="chatbox">
+    <div class="messages">
+      <div class="row">
+        <div class="column-bot">
+          <img class="avatar" src="{{ url_for('static', filename='images/PSAbot.png') }}" alt="bot">
+        </div>
+        <div class="message bot-message column-bot">Welcome to MPAbot!<br>How can I help you?</div>
+      </div>
+    </div>
+    <div width="500px">
+      <input type="text" id="message-input" placeholder="Type your message here..." width="300px">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+
+  <div id="test"></div>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='assets/js/index.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='assets/js/demo.js') }}"></script>
+
+</body>
+</html>

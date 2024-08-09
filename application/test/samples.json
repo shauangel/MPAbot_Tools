@@ -1,0 +1,36 @@
+{
+  "GeneralQuestions": [
+    "How can I create a stand-alone binary from a Python script?",
+    "Is there a source code level debugger with breakpoints, single-stepping, etc.?",
+    "Are there coding standards or a style guide for Python programs?"
+  ],
+  "CoreLanguage": [
+    "How do I copy an object in Python?",
+    "Why are default values shared between objects?",
+    "What is the difference between arguments and parameters?"
+  ],
+  "NumbersAndstrings": [
+    "Is there an equivalent to Perl\u2019s chomp() for removing trailing newlines from strings?",
+    "Why does -22 // 10 return -3?",
+    "How do I use strings to call functions/methods?"
+  ],
+  "Performance": [
+    "My program is too slow. How do I speed it up?",
+    "What is the most efficient way to concatenate many strings together?"
+  ],
+  "Sequences_TuplesLists": [
+    "What is a negative index?",
+    "Why does a_tuple[i] += [\u2018item\u2019] raise an exception when the addition works?",
+    "I want to do a complicated sort: can you do a Schwartzian Transform in Python?"
+  ],
+  "Objects": [
+    "How do I get a list of all instances of a given class?",
+    "How do I create static class data and static class methods?",
+    "How can a subclass control what data is stored in an immutable instance?"
+  ],
+  "Modules": [
+    "When I edit an imported module and reimport it, the changes don\u2019t show up. Why does this happen?",
+    "How do I find the current module name?",
+    "How can I have modules that mutually import each other?"
+  ]
+}

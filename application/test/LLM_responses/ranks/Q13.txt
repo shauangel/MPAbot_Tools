@@ -1,0 +1,20 @@
+Question: Why does a_tuple[i] += [‘item’] raise an exception when the addition works?
+After analyzing the content of the provided documents, I have identified the following ranking for optimization:
+
+1. Document 3 (source: stackoverflow)
+2. Document 17 (source: reddit)
+3. Document 0 (source: reddit)
+4. Document 16 (source: reddit)
+5. Document 9 (source: reddit)
+6. Document 7 (source: reddit)
+7. Document 12 (source: stackoverflow)
+8. Document 10 (source: reddit)
+9. Document 15 (source: reddit)
+10. Document 13 (source: reddit)
+11. Document 14 (source: reddit)
+12. Document 8 (source: reddit)
+13. Document 1 (source: stackoverflow)
+14. Document 2 (source: stackoverflow)
+15. Document 4 (source: reddit)
+16. Document 5 (source: stackoverflow)
+17. Document 6 (source: reddit)

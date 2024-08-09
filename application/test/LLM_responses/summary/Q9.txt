@@ -1,0 +1,60 @@
+Question: How do I use strings to call functions/methods?
+Document 0:
+The document provides a modified code snippet with explanations on creating a list in C# and the benefits of a specific method. It also questions the reasoning behind returning an object in a particular way.
+
+Document 1:
+The document compares the OOP and procedural programming paradigms, emphasizing the differences between functions and methods in Python. It clarifies that the back end treats methods and functions similarly and discusses the syntactic sugar in method calls.
+
+Document 2:
+The document explains the difference between using periods in `random.randint` and `s.split` in Python, highlighting the concept of member functions and the importance of understanding classes and objects in Python programming.
+
+Document 3:
+This document briefly states that functions using `x.foo()` are methods, unique to each object instance.
+
+Document 4:
+The document provides a C# code snippet demonstrating the creation and usage of a class with properties and methods.
+
+Document 5:
+This document advises on initializing a list before using it, focusing on potential side effects of the `static` keyword in C#.
+
+Document 6:
+The document details the usage of dot notation and parentheses in Python, explaining the difference between functions, methods, and callable objects.
+
+Document 7:
+It discusses the relationship between the dot notation and classes in Python, highlighting the distinction between class methods and functions.
+
+Document 8:
+The document explains the usage of function syntax and dot syntax in Python, depending on whether the function is a class attribute.
+
+Document 9:
+It clarifies that `.strip()` in Python is a method of the `str` class rather than a built-in function, emphasizing Python's strong typing.
+
+Document 10:
+It suggests using `getattr` or `operator.methodcaller` for a specific programming task.
+
+Document 11:
+The document delves into object-oriented programming in Python, explaining the difference between member functions and functions defined outside classes.
+
+Document 12:
+This document briefly mentions the use of dictionary unpacking as a dynamic and less error-prone alternative to `eval`.
+
+Document 13:
+It encourages building classes to understand the syntax better and uses analogies to explain the concept of pathways in programming.
+
+Document 14:
+The document differentiates between functions and methods in Python, specifically focusing on the design decision to have `strip()` as a method of the string class.
+
+Document 15:
+It suggests using `getattr` for accessing methods in a class or using functions in Python.
+
+Document 16:
+This document explains the relationship indicated by the dot notation in Python and how it specifies functions belonging to specific modules or objects.
+
+Document 17:
+It provides an abstract explanation of the dot syntax in Python, emphasizing that everything in Python is a "thing" with attributes accessible through dot syntax.
+
+Document 18:
+This brief document mentions using a dictionary as the best approach for a specific task.
+
+Document 19:
+It mentions the usage of `getattr` with class instance bound methods and other Python entities for a given module and method.

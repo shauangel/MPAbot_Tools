@@ -1,0 +1,67 @@
+Question: When I edit an imported module and reimport it, the changes don’t show up. Why does this happen?
+Document 0 (Stackoverflow):
+- The imp module is pending depreciation in favor of importlib in Python 3.4, where one should use importlib.reload to explicitly reload the module.
+
+Document 1 (Reddit):
+- Importing creates separate namespaces in Python, potentially using more RAM if imported multiple times.
+- It is suggested to import only the parts needed from a library to minimize RAM usage.
+- The document also discusses the option of writing helper code in C or C++ and using it in Python via the ctypes module.
+
+Document 2 (Reddit):
+- When a module is imported, all code within the module is executed, which may be necessary for setting up the module.
+- The document explains the difference between importing individual functions/classes versus importing everything using '*'.
+- It is recommended to minimize the use of global code and keep code inside functions with clear control flow.
+
+Document 3 (Reddit):
+- There is no need to worry about importing the same library multiple times in Python, as it is handled efficiently by the backend.
+- Python's garbage collection system efficiently handles multiple imports of a library without causing issues.
+
+Document 4 (Reddit):
+- The document discusses using the 'reload()' function in Python for reloading modules.
+- It addresses potential issues with importing modules using 'from X import *' and suggests solutions for un-shadowing objects.
+
+Document 5 (Stackoverflow):
+- When a module is reloaded in Python, the dictionary containing the module's global variables is retained, and redefinitions of names override old definitions.
+
+Document 6 (Reddit):
+- The entire module is loaded into the program regardless of how it is imported, with variations in import statements determining the availability of names in the module.
+- It is advised against using 'from * import *' due to potential name clashes and code readability concerns.
+
+Document 7 (Stackoverflow):
+- In Python 3, the 'reload' function was moved to the imp module, which was deprecated in Python 3.4 in favor of importlib, where 'reload' was added.
+
+Document 8 (Reddit):
+- The 'importlib.reload()' function is recommended for reloading Python modules, particularly useful for executing code in notebooks without restarting the kernel.
+
+Document 9 (Reddit):
+- Running the entire file when importing a module is necessary as individual functions may depend on other parts of the module.
+
+Document 10 (Reddit):
+- An IPython extension called 'autoreload' allows for tracking changes in modules and automatically re-importing them in an IPython shell or Jupyter notebook.
+
+Document 11 (Reddit):
+- Selective imports are preferred to importing all modules to avoid polluting the namespace and to maintain clarity in code.
+
+Document 12 (Stackoverflow):
+- An IPython extension called 'autoreload' enables tracking and re-importing module changes in an IPython shell or Jupyter notebook.
+
+Document 13 (Stackoverflow):
+- Python caches imported modules, potentially leading to issues with detecting changes in files, which can be addressed by using the 'reload' function after import.
+
+Document 14 (Reddit):
+- Selective importing is recommended to avoid namespace pollution, and aliasing can be used to differentiate between functions with the same name in different modules.
+
+Document 15 (Reddit):
+- It is important to run the entire file when importing a module, as unexpected code changes may occur throughout the file.
+
+Document 16 (Reddit):
+- Python does not usually require specific directives for imports.
+
+Document 17 (Reddit):
+- Selective imports are beneficial for avoiding excessive typing and maintaining code readability, with the option to use aliases for imported functions.
+
+Document 18 (Reddit):
+- The document humorously mentions examples of unconventional import practices, such as importing 'nan' directly from numpy.
+
+Document 19 (Reddit):
+- The preference for importing only modules, rather than individual components, is highlighted to maintain clear namespaces in code.

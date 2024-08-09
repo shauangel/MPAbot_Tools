@@ -1,0 +1,60 @@
+Question: Why are default values shared between objects?
+**Document 0 (Stack Overflow):**
+The document discusses a common mistake in Python where using a list as a default variable in a class leads to all instances sharing the same list instance. It recommends using None as a default and checking for it instead. Additionally, it advises against using "list" as a variable name to avoid shadowing the built-in list. 
+
+**Document 1 (Stack Overflow):**
+This document explains why a variable behaves like a class variable in Python due to default values being stored in class attributes. It provides insights into how default parameters are stored and the options available to make them different for each instance.
+
+**Document 2 (Reddit):**
+The document provides a summary of why default values are shared between objects in Python functions due to default values being properties of the function itself. It includes references to the Python language FAQ and Stack Overflow for further clarification.
+
+**Document 3 (Stack Overflow):**
+This document highlights how default values are evaluated only once in Python functions and explains how to avoid sharing default values between subsequent calls to a function.
+
+**Document 4 (CodeProject):**
+The document discusses how the CLR automatically zeros the memory allocated for variables and sets types to their default values. It also explains error handling in C# when reading uninitialized variables and the optimization done for structs in CLR.
+
+**Document 5 (Stack Overflow):**
+The document explains the concept of mutable default arguments in Python and how to handle warnings related to mutable objects. It emphasizes the difference between mutable and immutable types in Python and the potential issues with mutable default arguments.
+
+**Document 6 (CodeProject):**
+The document explains how variables are initialized with default values upon creation in programming languages like Java. It mentions the default values for different data types.
+
+**Document 7 (CodeProject):**
+The document discusses the role of Option Explicit in VB.NET, variable initialization, and scoping in C# and VB.NET. It clarifies that Option Explicit does not force variable initialization and emphasizes the importance of validating input values.
+
+**Document 8 (Stack Overflow):**
+The document extends the discussion on mutable types in Python and provides examples to illustrate the differences between mutable and immutable objects. It emphasizes the importance of understanding how Python handles mutable default arguments.
+
+**Document 9 (CodeProject):**
+The document explains that defining a default value for an array as a parameter requires a compile-time constant but suggests using null values and assigning the default value accordingly.
+
+**Document 10 (CodeProject):**
+The document emphasizes the developer's responsibility to initialize variables when declaring them in C# and provides examples of initializing variables with default values.
+
+**Document 11 (Reddit):**
+The document delves into the behavior of mutable arguments in Python and explains the difference between reassigning variables and calling mutative methods on objects. It emphasizes the importance of handling mutable objects carefully to avoid unintended consequences.
+
+**Document 12 (CodeProject):**
+The document discusses variable scope and initialization in C# and VB.NET, the use of Option Explicit in VB.NET, and how to prevent default values from being used in code.
+
+**Document 13 (Reddit):**
+The document explains the difference between reassigning variables using "=" and calling mutative methods on objects in Python. It provides examples and insights into how Python handles mutable objects and augmented assignments.
+
+**Document 14 (Stack Overflow):**
+The document clarifies the concept of passing parameters to functions by value in Python and how default parameter values are evaluated. It provides a workaround using None as the default value and explicitly testing for it in function bodies.
+
+**Document 15 (CodeProject):**
+The document explains how to set warning levels in C# project properties and emphasizes working in Debug mode for error handling.
+
+**Document 16 (CodeProject):**
+The document suggests making changes to improve the handling of default arguments in mutable situations.
+
+**Document 17 (CodeProject):**
+The document discusses the default-by-value nature of register types in C# and how object properties are changed by referencing the object itself. It emphasizes the optimization benefits of referencing objects rather than copying them.
+
+**Document 18 (Stack Overflow):**
+The document critiques a class definition in Python and explains the impact of defining class attributes with default values. It provides insights into how class attributes and instance attributes work in Python classes.
+
+**Document 19 (Stack Overflow):**
+The document provides a solution for specifying parameters in Python functions by creating variables with default values. It clarifies that redefining variables does not affect the default value for the function parameter.

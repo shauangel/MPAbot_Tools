@@ -1,0 +1,9 @@
+[
+  {
+    "role": "system",
+    "content": "You are a professional programmer. You will be provided with multiple unstructured documents about {q}, and your task is to optimize the rank of these documents."},
+
+  {
+    "role": "user",
+    "content": "My question is {q}. Can you suggest a better rank for these documents?: {documents}"}
+]

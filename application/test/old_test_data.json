@@ -1,0 +1,387 @@
+[
+  {
+    "link": "https://stackoverflow.com/questions/74412503/cannot-access-local-variable-a-where-it-is-not-associated-with-a-value-but",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python"
+    ],
+    "question": {
+      "id": 74412503,
+      "title": "&quot;cannot access local variable &#39;a&#39; where it is not associated with a value&quot;, but the value is defined",
+      "content": "I don't know why when a is located in def test() it can not be found and gives the error UnboundLocalError: cannot access local variable 'a' where it is not associated with a value I tried setting a as global a or using a nonlocal modifier on it inside the def but it doesn't seem to work. Is there a way I can get it to recognize a and run properly?",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 74412646,
+        "score": 11,
+        "vote": 0,
+        "content": "Python variables are scope based. This means one cannot access a value declared inside a function. But you can access a variable declared outside a function. This would fail: this would print 1: Notice you can access it. You'll fail if you want to update it. This would fail too: What you need is no tell the interpreter to find variable a in the global scope. Warning: It's not a good practice to use global variables. So better make sure the function is getting the value.",
+        "abstract": ""
+      },
+      {
+        "id": 74412647,
+        "score": 3,
+        "vote": 0,
+        "content": "To access a global variable within a function you must specify it with global. Otherwise, the variable inside the function is a local variable that only has utility inside that function. That's why you get the error: \"UnboundLocalError: local variable 'a' referenced before assignment\". Inside the function you haven't defined the variable 'a' yet, either local or global.",
+        "abstract": ""
+      },
+      {
+        "id": 74412557,
+        "score": 2,
+        "vote": 0,
+        "content": "You need to pass a to the function test. Python thinks as the a in the function as a local variable.\nThis will work:",
+        "abstract": ""
+      }
+    ]
+  },
+  {
+    "link": "https://stackoverflow.com/questions/10851906/python-3-unboundlocalerror-local-variable-referenced-before-assignment",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python",
+      "python-3.x",
+      "scope"
+    ],
+    "question": {
+      "id": 10851906,
+      "title": "Python 3: UnboundLocalError: local variable referenced before assignment",
+      "content": "The following code gives the error UnboundLocalError: local variable 'Var1' referenced before assignment: How can I fix this?",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 10851939,
+        "score": 103,
+        "vote": 0,
+        "content": "You can fix this by passing parameters rather than relying on Globals",
+        "abstract": ""
+      },
+      {
+        "id": 10852003,
+        "score": 721,
+        "vote": 0,
+        "content": "This is because, even though Var1 exists, you're also using an assignment statement on the name Var1 inside of the function (Var1 -= 1 at the bottom line). Naturally, this creates a variable inside the function's scope called Var1 (truthfully, a -= or += will only update (reassign) an existing variable, but for reasons unknown (likely consistency in this context), Python treats it as an assignment). The Python interpreter sees this at module load time and decides (correctly so) that the global scope's Var1 should not be used inside the local scope, which leads to a problem when you try to reference the variable before it is locally assigned. Using global variables, outside of necessity, is usually frowned upon by Python developers, because it leads to confusing and problematic code. However, if you'd like to use them to accomplish what your code is implying, you can simply add, inside the top of your function: This will tell Python that you do not intend to define a Var1 or Var2 variable inside the function's local scope. The Python interpreter sees this at module load time and decides (correctly so) to look up any references to the aforementioned variables in the global scope.",
+        "abstract": ""
+      },
+      {
+        "id": 21836774,
+        "score": 5,
+        "vote": 0,
+        "content": "Why not simply return your calculated value and let the caller modify the global variable. It's not a good idea to manipulate a global variable within a function, as below: or even make local copies of the global variables and work with them and return the results which the caller can then assign appropriately",
+        "abstract": ""
+      },
+      {
+        "id": 26579841,
+        "score": 14,
+        "vote": 0,
+        "content": "I don't like this behavior, but this is how Python works. The question has already been answered by others, but for completeness, let me point out that Python 2 has more such quirks. Python 2.7.6 returns an error: Python sees the f is used as a local variable in [f for f in [1, 2, 3]], and decides that it is also a local variable in f(3). You could add a global f statement: It does work; however, f becomes 3 at the end... That is, print [f for f in [1, 2, 3]] now changes the global variable f to 3, so it is not a function any more. Fortunately, it works fine in Python3 after adding the parentheses to print.",
+        "abstract": ""
+      },
+      {
+        "id": 10852006,
+        "score": 167,
+        "vote": 0,
+        "content": "If you set the value of a variable inside the function, python understands it as creating a local variable with that name. This local variable masks the global variable. In your case, Var1 is considered as a local variable, and it's used before being set, thus the error. To solve this problem, you can explicitly say it's a global by putting global Var1 in you function.",
+        "abstract": ""
+      }
+    ]
+  },
+  {
+    "link": "https://stackoverflow.com/questions/76239899/python-unbound-local-error-occurring-despite-initializing-the-local-variable",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python",
+      "runtime-error"
+    ],
+    "question": {
+      "id": 76239899,
+      "title": "Python, Unbound Local Error occurring despite initializing the local variable",
+      "content": "I'm running into an unbound local error message that I am not understanding.  I am setting the default value of a variable to None (just so it is initialized) then in the next function, I run an if statement to check if it is still None, or if I have assigned it something else, and that is when I am getting the error.  Please see the code below.  Any help would be good. I'm using this to toggle standard output, so when I run a command with os.system('some command') that there is no output. The code is supposed to call toggle_out(0) to turn it off, and toggle_out(1) to re-enable it. Please let me know if anything comes to mind.",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 76239934,
+        "score": 0,
+        "vote": 0,
+        "content": "You are trying to assign a value to a variable within a function that was defined outside of that function's scope. In your case, you are trying to assign a value to stdout and restore_out variables inside the function toggle_out, which are defined outside of the function's scope. When you define a variable inside a function, Python assumes that you are creating a new variable that is local to that function. This means that if you try to access or modify a variable that was defined outside of the function's scope, Python will assume that you are referring to a different variable. You can use the global keyword to explicitly tell Python that you want to use the variables that were defined outside of the function's scope.",
+        "abstract": ""
+      }
+    ]
+  },
+  {
+    "link": "https://stackoverflow.com/questions/71229025/why-am-i-getting-unboundlocalerror-local-variable-coffee-machine-referenced-b",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python",
+      "variables"
+    ],
+    "question": {
+      "id": 71229025,
+      "title": "Why am I getting &quot;UnboundLocalError local variable &#39;coffee_machine&#39; referenced before assignment&quot; despite coffee_machine being a global variable?",
+      "content": "",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 71229058,
+        "score": 1,
+        "vote": 0,
+        "content": "You have not declared global coffee_machine at the start of the function, and thus it's not forced to be global, and within the function you try setting a value to it, which makes it local.\nAll that's needed to be done is adding that global line which will force it to be global, like so:",
+        "abstract": ""
+      }
+    ]
+  },
+  {
+    "link": "https://stackoverflow.com/questions/44645109/unboundlocalerror-in-python-while-printing-global-variable",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python"
+    ],
+    "question": {
+      "id": 44645109,
+      "title": "UnBoundLocalError in Python while printing global variable",
+      "content": "Why is this code giving 'UnboundLocalError: local variable 'num1' referenced before assignment' error?",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 44645167,
+        "score": 1,
+        "vote": 0,
+        "content": "Another gotcha! of python. This is because of hoisting and variable shadowing. If you have a local and global variable with the same name in a particular scope, the local variable will shadow the global one. Furthermore, declarations are hoisted to the top of their scope. So your original code will look something like this: Now, if you try to print num1 without having assigned any value to it, it throws UnboundLocalError since you have not bound any value to the variable at the time you are trying to dereference it. To fix this, you need to add the global keyword to signify that num1 is a global variable and not local.",
+        "abstract": ""
+      }
+    ]
+  },
+  {
+    "link": "https://stackoverflow.com/questions/9264763/why-does-this-unboundlocalerror-occur-closure",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python",
+      "scope",
+      "closures",
+      "global-variables"
+    ],
+    "question": {
+      "id": 9264763,
+      "title": "Why does this UnboundLocalError occur (closure)?",
+      "content": "What am I doing wrong here? The above code throws an UnboundLocalError.",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 9265057,
+        "score": 7,
+        "vote": 0,
+        "content": "The reason why your code throws an UnboundLocalError is already well explained in other answers. But it seems to me that you're trying to build something that works like itertools.count(). So try it out, and see if it suits your case:",
+        "abstract": ""
+      },
+      {
+        "id": 9264833,
+        "score": -2,
+        "vote": 0,
+        "content": "Python is not purely lexically scoped. See Using global variables in a function. And Notes on Python variable scope.",
+        "abstract": ""
+      },
+      {
+        "id": 9264828,
+        "score": 1,
+        "vote": 0,
+        "content": "Try this:",
+        "abstract": ""
+      },
+      {
+        "id": 9264911,
+        "score": 30,
+        "vote": 0,
+        "content": "To answer the question in your subject line,* yes, there are closures in Python, except they only apply inside a function, and also (in Python 2.x) they are read-only; you can't re-bind the name to a different object (though if the object is mutable, you can modify its contents). In Python 3.x, you can use the nonlocal keyword to modify a closure variable. * The question origially asked about closures in Python.",
+        "abstract": ""
+      },
+      {
+        "id": 9264845,
+        "score": 215,
+        "vote": 0,
+        "content": "Python doesn't have variable declarations, so it has to figure out the scope of variables itself.  It does so by a simple rule:  If there is an assignment to a variable inside a function, that variable is considered local.[1]  Thus, the line implicitly makes counter local to increment().  Trying to execute this line, though, will try to read the value of the local variable counter before it is assigned, resulting in an UnboundLocalError.[2] If counter is a global variable, the global keyword will help.  If increment() is a local function and counter a local variable, you can use nonlocal in Python 3.x.",
+        "abstract": ""
+      },
+      {
+        "id": 9264910,
+        "score": 5,
+        "vote": 0,
+        "content": "Python has lexical scoping by default, which means that although an enclosed scope can access values in its enclosing scope, it cannot modify them (unless they're declared global with the global keyword). A closure binds values in the enclosing environment to names in the local environment. The local environment can then use the bound value, and even reassign that name to something else, but it can't modify the binding in the enclosing environment. In your case you are trying to treat counter as a local variable rather than a bound value. Note that this code, which binds the value of x assigned in the enclosing environment, works fine:",
+        "abstract": ""
+      },
+      {
+        "id": 9264811,
+        "score": 94,
+        "vote": 0,
+        "content": "You need to use the global statement so that you are modifying the global variable counter, instead of a local variable: If the enclosing scope that counter is defined in is not the global scope, on Python 3.x you could use the nonlocal statement.  In the same situation on Python 2.x you would have no way to reassign to the nonlocal name counter, so you would need to make counter mutable and modify it:",
+        "abstract": ""
+      },
+      {
+        "id": 9264802,
+        "score": 3,
+        "vote": 0,
+        "content": "To modify a global variable inside a function, you must use the global keyword. When you try to do this without the line inside of the definition of increment, a local variable named counter is created so as to keep you from mucking up the counter variable that the whole program may depend on. Note that you only need to use global when you are modifying the variable; you could read counter from within increment without the need for the global statement.",
+        "abstract": ""
+      }
+    ]
+  },
+  {
+    "link": "https://stackoverflow.com/questions/68701209/how-do-i-stop-unboundlocalerror-local-variable-referenced-before-assignment-err",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python"
+    ],
+    "question": {
+      "id": 68701209,
+      "title": "How do I stop UnboundLocalError: local variable referenced before assignment error?",
+      "content": "I keep getting this error: UnboundLocalError: local variable 'result' referenced before assignment Here is the code: I tried declaring the result variable globally or at the start with a value of 0 But then I just get this error: EDIT: I've now tried: And i get the same error but TypeError: list[int] instead. Why? the class type is list[int] and that's what ive given it. I've tried just list too. It says the expected return type is integer[]",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 68701396,
+        "score": 1,
+        "vote": 0,
+        "content": "The break statement in your code is placed such that the outer for loop only runs the first iteration and result never gets defined. I would suggest adding tabs behind it so that it gets to the right place. And by the way, you seem to be using bad syntax in list[int]. It should actually be [int()] or even [0]. But if there's a reason you're doing this that I don't know, then okay. The main issue is in the break statement.",
+        "abstract": ""
+      },
+      {
+        "id": 68701389,
+        "score": 0,
+        "vote": 0,
+        "content": "As mentioned in the comments, your approach of initializing result is theoretically correct, but the type has to be correct as well. result = 0 defines result as an integer but as you specify the return type as list[int] you should initialize result accordingly.",
+        "abstract": ""
+      },
+      {
+        "id": 68701298,
+        "score": 0,
+        "vote": 0,
+        "content": "Your error araise for example with but that is a consequence of the fact the result is not defined in the i == j condition so your function will return a value which is not defined.",
+        "abstract": ""
+      }
+    ]
+  },
+  {
+    "link": "https://stackoverflow.com/questions/66319795/why-is-python-giving-me-an-unboundlocalerror-when-i-run-this-program",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python",
+      "function",
+      "compiler-errors",
+      "global-variables"
+    ],
+    "question": {
+      "id": 66319795,
+      "title": "Why is python giving me an UnboundLocalError when I run this program?",
+      "content": "I am currently experimenting with computer learning, and I made a function where you enter \"true\" or \"false\" and the computer learns which boolean it is, after which the program prints the percent of correct guesses the computer made: I then tried to improve my program by adding 2 global variables, percentavg and percentavgnum, that will average all the success percentages together at the end of the program: But I keep getting this error whenever I run the program: Does anyone know what I am doing wrong?",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 66322595,
+        "score": 0,
+        "vote": 0,
+        "content": "Instead of using a global variable and relying on a side affect of the function, write your function to accept the module level variables that need to be updated as arguments and to return the updated values.",
+        "abstract": ""
+      },
+      {
+        "id": 66320406,
+        "score": 2,
+        "vote": 0,
+        "content": "This problem is related to how Python determines the scope of a variable. You can notice that the error occurs when you try to increment percentavg via percentavg += percent. So you are trying to assign a new value to percentavg. The thing is that in Python, when you assign a value to a variable, the variable becomes a local variable. But percentavg has not been defined in this scope (the scope of oneround(), and so you get this UnboundLocalError. All of this is explained in details here:\nhttps://docs.python.org/3/faq/programming.html#why-am-i-getting-an-unboundlocalerror-when-the-variable-has-a-value You have at least 3 options: And you don't need to declare your variables as global at all. (That's what @Blue proposed) The keywork global is used to access the outer scope variables (the variables declared outside the scope of the function). If you choose option 1, you can delete these lines at the begining of your code: If you choose option 2, you can delete these lines at the begining of your code: but you will have to keep these lines: These lines could be at the beginin of your code, but it coul be in the while loop, or in the try statement, before calling oneround(). But, based on your piece of code, the option 1 is the best coding practice.",
+        "abstract": ""
+      },
+      {
+        "id": 66319814,
+        "score": 2,
+        "vote": 0,
+        "content": "Use global. Put it at the top of the function with the variable names after it. Like this: global percentavg, percentavgnum\nNOTE: The names must be comma-separated.",
+        "abstract": ""
+      }
+    ]
+  },
+  {
+    "link": "https://stackoverflow.com/questions/43462964/why-am-i-getting-an-unboundlocalerror",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python",
+      "local"
+    ],
+    "question": {
+      "id": 43462964,
+      "title": "Why am I getting an unboundLocalError?",
+      "content": "Error I am getting is:   UnboundLocalError: local variable referenced before assignment? Code:",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 43463248,
+        "score": 0,
+        "vote": 0,
+        "content": "The chain of if/elif/elif ... suppose none of those conditions are met? Then problem is not assigned. But you try to use it in user_solution = get_user_solution(problem). Looks like problem is the problem. The solution depends on what your design says should happen in this case. Is there a default that should be used? Raise your own exception? Return an error code? You have to decide that.",
+        "abstract": ""
+      },
+      {
+        "id": 43463186,
+        "score": 0,
+        "vote": 0,
+        "content": "Like Himanshu said It is because you have used a variable solution to which you haven't done any assignment. So in this case python looks for it inside function if not, it will look for it in global. if it doesn't find any assignment to it before being used it raises UnboundLocalError, also the variable problem is confined to if block so i think it is not accessible outside. So assign problem with some value before nested if block and also check solution variable about what should be assigned before passing it in function.",
+        "abstract": ""
+      },
+      {
+        "id": 43463034,
+        "score": 0,
+        "vote": 0,
+        "content": "In last line return check_solution(user_solution, solution, count) solution variable is not defined",
+        "abstract": ""
+      }
+    ]
+  },
+  {
+    "link": "https://stackoverflow.com/questions/42579202/unboundlocalerror-local-variable-y-referenced-before-assignment",
+    "keywords": [
+
+    ],
+    "tags": [
+      "python",
+      "python-3.x"
+    ],
+    "question": {
+      "id": 42579202,
+      "title": "UnboundLocalError: local variable &#39;y&#39; referenced before assignment",
+      "content": "I have below code on list comprehension. This is giving me below error However, below code works. Is there any scoping rule for the second for loop in list comprehension? I am using Python 3.6.",
+      "abstract": ""
+    },
+    "answers": [
+      {
+        "id": 42579481,
+        "score": 2,
+        "vote": 0,
+        "content": "Good question,however this code works well in Python2.x,and it will throw UnboundLocalError in Python3.x. It can be a surprise to get the UnboundLocalError in previously\n  working code when it is modified by adding an assignment statement\n  somewhere in the body of a function. This is because when you make an assignment to a variable in a scope, that variable becomes local to that scope and shadows any similarly named variable in the outer scope. Since it assigns a new value to x, the compiler recognizes it as a local variable. Thus the earlier variable attempts to print the uninitialized local variable and an error results. See more details from Why am I getting an UnboundLocalError when the variable has a value?.",
+        "abstract": ""
+      }
+    ]
+  }
+]

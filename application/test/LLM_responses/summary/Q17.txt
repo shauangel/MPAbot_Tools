@@ -1,0 +1,60 @@
+Question: How can a subclass control what data is stored in an immutable instance?
+Document 0: 
+__new__() is used to allow subclasses of immutable types to customize instance creation, and it is often overridden in custom metaclasses to customize class creation.
+
+Document 1: 
+The __init__ method in classes like Car should handle common initialization tasks, while subclass-specific initialization should be handled by subclasses. It is recommended to define attributes like civic.id in the Car class's __init__ method and civic.something_else in the Honda class's __init__ method.
+
+Document 2: 
+Using a metaclass can provide more control and customization in creating singleton classes. Metaclasses are useful in implementing singletons and can help customize class creation and behavior.
+
+Document 3: 
+Overriding the __add__ method is necessary to define custom behavior when adding objects of a class. Modifying this method allows for the customization of addition operations between objects.
+
+Document 4: 
+Keys in dictionaries must be hashable, and it is generally recommended to avoid mutable keys. The use of immutable values and understanding the hash function's behavior is crucial for proper dictionary operations.
+
+Document 5: 
+In Python, float objects are immutable, so customizing the __new__ method is necessary for specific behaviors. Subclassing float types requires careful handling of exceptions in the __init__ method.
+
+Document 6: 
+The __setattr__ method in a class controls attribute setting on instances, and metaclasses play a role in defining class behavior. Understanding metaclasses and their relationship with classes is essential for customizing class behavior.
+
+Document 7: 
+Classes are ideal for storing state and behavior together, while functions are more suitable for behavior-only tasks. Using classes with state and behavior and functions for behavior-only tasks can lead to cleaner and more manageable code.
+
+Document 8: 
+Using __slots__ in classes allows explicit declaration of instance attributes, leading to memory savings and faster attribute access. Understanding how __slots__ work and their implications on memory usage is essential for efficient class design.
+
+Document 9: 
+Classes are used to define the features of objects, while objects specify the values for those features. Dataclasses or named tuples are recommended over plain dictionaries for better data abstraction and clarity.
+
+Document 10: 
+Classes define the characteristics of objects, while objects represent specific instances with defined values for those characteristics.
+
+Document 11: 
+The concept of mutability and immutability in Python varies based on the object types. Understanding immutability's implications on objects like dictionaries and keys is crucial for proper usage.
+
+Document 12: 
+Classes define types of objects, and objects represent specific instances of those types. Understanding the distinction between classes and objects is fundamental in object-oriented programming.
+
+Document 13: 
+The __call__ method in classes allows instances to be callable, and understanding the relationship between classes, instances, and methods like __new__ is crucial for customizing class behavior.
+
+Document 14: 
+Dataclasses are recommended over plain dictionaries for better data abstraction and clarity. Using dataclasses or Pydantic BaseModels can lead to more readable and maintainable code.
+
+Document 15: 
+Private fields and methods in classes help control access to data and ensure proper modification checks. Understanding the importance of encapsulation and data abstraction in class design is essential for better code organization.
+
+Document 16: 
+Classes are suitable for tightly coupled information and behavior, while functions are preferred for behavior-only tasks. Data abstractions are crucial for clean and maintainable code.
+
+Document 17: 
+Data abstractions, like dataclasses or named tuples, are recommended over plain dictionaries for better data organization and clarity. Proper data abstraction is essential for code readability and maintainability.
+
+Document 18: 
+Classes serve as design blueprints for objects, while objects are specific instances created based on those blueprints.
+
+Document 19: 
+Frozen dataclasses at the dataclass level ensure safe hashing and data integrity. The discussion on extending mutable fields in frozen dataclasses for specific hashing requirements is ongoing, with simplicity being a key consideration.

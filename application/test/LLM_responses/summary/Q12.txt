@@ -1,0 +1,34 @@
+Question: What is a negative index?
+Document 0: Negative indexes in Python slices refer to items counted from the right of the list. To include the final item in a list using a negative index to the right of the slice, you can use a negative step value. 
+
+Document 1: Python allows negative indexes in lists, with -1 being the last item. Using negative indexes accesses elements from the right side of the list. 
+
+Document 2: Slice syntax in Python is [start:end:step], where negative step values can be used to reverse the order of the slice. 
+
+Document 3: Python indexes start from zero, and accessing elements with negative indexes or values greater than the collection's size can lead to index out of range errors.
+
+Document 4: Using negative indexes in Python returns elements from the right side of the list. Slicing notation can be used to extract specific ranges of elements from a list.
+
+Document 5: Accessing elements in collections with negative or out-of-range indexes can cause errors. It is important to ensure that index values are within the valid range of the collection.
+
+Document 6: Arrays or indexable collections have valid index values from 0 to N-1. Accessing elements with invalid indexes can lead to index out of range exceptions.
+
+Document 7: IndexOutOfRangeException in C# occurs when trying to access an index that does not exist in a collection. Review and correct the logic causing the index out of range error.
+
+Document 8: Filtering out edge cases where array-out-of-bounds issues may occur can help prevent index out of range errors in C#.
+
+Document 9: Reviewing and debugging code step by step using a debugger can help identify and fix issues causing unexpected behavior or index out of range errors.
+
+Document 10: Checking if an index is within the range of a collection before accessing elements can help prevent index out of range errors.
+
+Document 11: Using a debugger to track code execution and identify issues such as accessing elements at out-of-range indexes in a list can help resolve errors.
+
+Document 12: Debugging tools like the debugger can assist in inspecting variables and identifying the source of index out of range errors in code.
+
+Document 13: Handling negative list indices in Python and raising exceptions for cases where negative indices indicate errors can help improve code robustness.
+
+Document 16: In Python, specifying a step size of -1 is necessary to print a reversed string using slice notation.
+
+Document 18: Converting code between languages and using negative indexes may not result in good code. It is recommended to design language-specific solutions to avoid index-related issues.
+
+Document 19: Modifying logic to handle adjacent indices correctly and raising custom errors for out-of-bounds indices can help improve the robustness of code when working with matrices.

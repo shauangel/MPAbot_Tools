@@ -1,0 +1,7 @@
+1. Move to /application
+2. enter cmd: pip install -r requirements.txt
+3. run toolbox
+
+
+## Current Error
+no model found >> need to install embedding model manually

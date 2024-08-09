@@ -1,0 +1,40 @@
+Question: How do I find the current module name?
+**Document 0 (Reddit)**: The author discusses using a specific import format for modules and the benefits of stepping away from conventional methods.
+
+**Document 1 (Stack Overflow)**: The document highlights the importance of using the `__name__` attribute to obtain the current module object from `sys.modules`.
+
+**Document 2 (Stack Overflow)**: The document advises against complex approaches and suggests accepting parameters for logging modules rather than using tricks or inspecting global variables.
+
+**Document 3 (Stack Overflow)**: The document refers to using the `__loader__` attribute and mentions the responsibilities of the `load_module()` method, indicating it should work fine in all cases.
+
+**Document 4 (Stack Overflow)**: The document provides a method for referencing the current module in Python.
+
+**Document 5 (Stack Overflow)**: The document explains the difference between `globals()` and `dir()` and provides an example of how it is typically implemented.
+
+**Document 6 (Stack Overflow)**: The document mentions that the name of a module is available as a string through its `__name__` attribute.
+
+**Document 7 (Reddit)**: The document warns against writing brittle and non-reusable code.
+
+**Document 8 (Reddit)**: The document explains the use of `if __name__ == "__main__":` for running code specifically when the script is executed directly.
+
+**Document 9 (Stack Overflow)**: The document suggests using `__file__` to obtain the full path of a module file and manipulating it with `os.path` functions.
+
+**Document 10 (Reddit)**: The document clarifies the usage of `if __name__ == "__main__":` for executing code only when the script is run directly.
+
+**Document 11 (Stack Overflow)**: The document recommends using `globals()` to return a dictionary representing the current global symbol table.
+
+**Document 12 (Stack Overflow)**: The document explains the concept of modules in Python and the use of the `__name__` attribute to distinguish between main and support modules.
+
+**Document 13 (Reddit)**: The document discusses the `__main__` environment in Python and the distinction between libraries and scripts.
+
+**Document 14 (Stack Overflow)**: The document suggests using the `__name__` variable to access the name of the current module.
+
+**Document 15 (Reddit)**: The document explains how the `__name__` attribute differs when a module is imported or run directly as a script.
+
+**Document 16 (Reddit)**: The document clarifies the usage of the `__name__` constant to differentiate between direct execution and module import.
+
+**Document 17 (Reddit)**: The document discusses the convention of using underscores before variable names in Python classes to indicate they should not be modified.
+
+**Document 18 (Reddit)**: The document explains the use of underscores in variable assignment to indicate that certain values are not intended for use.
+
+**Document 19 (Stack Overflow)**: The document discusses obtaining the immediate caller module in Python by walking up the call stack using `sys._getframe` or the `inspect` module.

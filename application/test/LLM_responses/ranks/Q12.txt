@@ -1,0 +1,24 @@
+Question: What is a negative index?
+Based on the relevance to the query "What is a negative index?", the following optimized ranking for the provided documents is suggested:
+
+1. Document 1: Python allows negative indexes to lists, with explanations and code examples demonstrating the concept.
+2. Document 0: Explanation of negative indexing in sequences and the limitation of using negative indexes to include the final item in a list.
+3. Document 13: Explanation of negative list indices in Python and handling exceptions related to negative indices.
+4. Document 4: Detailed explanation of using negative numbers as indexes in Python and slicing operations.
+5. Document 16: Explanation of the default step size and the need to specify a negative step size for printing a reversed string.
+6. Document 10: Code example in C# to check if an index is within the range of an array.
+7. Document 12: Troubleshooting advice for handling IndexOutOfRangeException in C# with debugger usage.
+8. Document 6: Clarification on valid index values for arrays or lists in C#.
+9. Document 5: Explanation of accessing collections using valid indexes in C#.
+10. Document 2: Explanation of slice syntax in Python with negative step value for reversing results.
+11. Document 11: Debugging advice for resolving out-of-range index errors in C#.
+12. Document 9: Suggestion to run code on a debugger for understanding and debugging.
+13. Document 8: Code improvement suggestion in C# to prevent array-out-of-bounds issues.
+14. Document 15: Error analysis and suggestion in C# for handling GridView index issues.
+15. Document 18: Caution against using negative indexes in C# and recommendations for code design.
+16. Document 19: Discussion on modifying logic to handle negative indices in adjacent element calculations.
+17. Document 7: Explanation of IndexOutOfRangeException in C# with advice on correcting code logic.
+18. Document 3: Explanation of Python indexes starting from zero and the concept of index out of range error.
+19. Document 17: Fragment mentioning existence check for keys in a GridView in C#.
+
+This ranking is based on the clarity and relevance of the content to the concept of negative indexing in programming languages like Python and C#.

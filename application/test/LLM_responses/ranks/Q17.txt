@@ -1,0 +1,14 @@
+Question: How can a subclass control what data is stored in an immutable instance?
+Based on the relevance to the question "How can a subclass control what data is stored in an immutable instance?", here is the optimized ranking for the provided documents:
+
+1. **Document 0 (id: 5693958)**: This document discusses how `__new__` can be used by subclasses of immutable types to customize instance creation. It directly addresses the topic of controlling data in an immutable instance.
+   
+2. **Document 13 (id: 67662112)**: This document explains the mechanics of `__new__` and `__init__` methods in Python classes, which is relevant to understanding how subclasses can influence data storage in immutable instances.
+
+3. **Document 15 (id: i16h2bp)**: The discussion in this document about the usage of classes and functions, and the importance of private fields and methods, indirectly relates to data encapsulation and control in classes, which is relevant in the context of immutable instances.
+
+4. **Document 14 (id: clalfcc)**: The content in this document regarding the appropriateness of using classes and functions, along with the mention of dataclasses and Pydantic BaseModels, contributes to the understanding of managing data in Python objects.
+
+5. **Document 17 (id: i16hgyf)**: This document emphasizes the significance of using data abstractions like dataclasses instead of plain dicts, which is crucial in the context of structured data storage within classes.
+
+These documents provide insights into various aspects of working with classes, functions, data abstraction, and data storage in Python, which are all relevant to understanding how subclasses can control data in immutable instances.

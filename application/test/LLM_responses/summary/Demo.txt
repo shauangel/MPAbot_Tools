@@ -1,0 +1,38 @@
+Question: How to fix flask CORS error?
+Document 0: The document discusses the issue of CORS (Cross-Origin Resource Sharing) in web development. It highlights that sending requests from the front end may be blocked by the browser and suggests enabling it on the back end or sending requests from the back end. It also recommends reading an article on CORS for a better understanding.
+
+Document 1: The document shares a personal experience of encountering a CORS issue while running an app on Google App Engine. The solution involved ensuring the destination and source URLs were the same, as running the front and back end on different ports caused the problem.
+
+Document 2: The document inquires about finding a solution to an unspecified issue and mentions switching to FastAPI.
+
+Document 3: The document provides a solution involving setting the Access-Control-Allow-Origin header on the response in Flask. It also mentions a specific URL for CORS in Flask.
+
+Document 4: The document offers troubleshooting steps when tunneling a Flask app through ngrok to avoid CORS issues, including specifying the ngrok URL, handling preflight requests, and checking for middleware interference.
+
+Document 5: The document addresses an issue related to preflight requests not responding with an HTTP OK status. It mentions resolving a CORS issue by fixing a before request handler for authorization.
+
+Document 6: The document showcases a configuration setup in Python using Flask-CORS for handling CORS headers. It also discusses handling multiple origins dynamically.
+
+Document 7: The document emphasizes the need to have a GET option for endpoints where POST and PUT methods are used. It suggests setting the correct CORS headers on GET requests and provides suggestions for handling CORS.
+
+Document 8: The document suggests checking if the header is present in the network tab to enable CORS using hooks.
+
+Document 9 & 10: The documents highlight the importance of permitting OPTIONS requests alongside POST requests in Flask routes to handle CORS pre-flight calls effectively.
+
+Document 11: The document provides a code snippet in Python for constructing a payload with correct quotes.
+
+Document 12: The document discusses resolving issues related to web servers on the same machine by starting a Python-based server, which subsequently resolved issues with the flask-socket.io server.
+
+Document 13: The document shares a working solution using Flask and Flask-CORS, with a note on setting support_credentials to True for sending cookies along with the payload.
+
+Document 14: The document describes solving an issue in C# by removing a property from the HttpClientHandler class.
+
+Document 15: The document demonstrates adding response headers with Flask's @app.after_request and suggests handling CORS issues through a before_request hook.
+
+Document 16: The document suggests using Nginx and Docker to handle CORS issues effectively, moving away from Flask-CORS once everything originates from the same origin.
+
+Document 17: The document discusses the simplicity of implementing CORS in Flask and provides a code snippet for creating a Flask app with CORS headers.
+
+Document 18: The document advises that a 500 error from the application may be mistaken for a CORS error by the browser, recommending putting Flask in debug mode to validate any internal server errors.
+
+Document 19: The document mentions the Flask-CORS module and provides a code snippet and procedure for installing and using it in a Flask application.

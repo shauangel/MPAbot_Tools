@@ -1,0 +1,60 @@
+Question: Are there coding standards or a style guide for Python programs?
+Document 0:
+The document criticizes a professor for advising against the industry standard style guide for Python, PEP-8. It emphasizes the importance of following PEP-8 for function and variable names to avoid potential issues in future portfolios.
+
+Document 1:
+This document highlights Python PEP 8 guidelines, stating that function and variable names should be lowercase with words separated by underscores for readability. It also mentions exceptions where mixedCase is allowed in specific contexts.
+
+Document 2:
+The document discusses the Google style guide for variable naming conventions, emphasizing its usefulness for maintaining consistency within a team working on the same codebase.
+
+Document 3:
+It outlines the naming conventions recommended by the Google Python Style Guide for various elements such as module names, class names, and global constants. It stresses the importance of applying a similar naming scheme for CLASS_CONSTANT_NAME.
+
+Document 4:
+This document recommends referring to PEP 8 as a reliable guide for writing readable Python code.
+
+Document 5:
+The document discusses line length limitations in coding, suggesting that adhering to a reasonable character limit, such as 79-80 characters, can enhance code readability. It also provides tips on structuring code for better maintenance.
+
+Document 6:
+It highlights safety standards in programming, such as IEC 61508 and ISO 26262, which recommend using old, proven languages like C and Ada for high safety levels due to their predictable execution.
+
+Document 7:
+The document mentions that some languages have official style guides, while others rely on linters and formatters like Gofmt in Go for maintaining code consistency.
+
+Document 8:
+It advises following a well-established style guide, such as the one provided by Google, for writing high-quality code.
+
+Document 9:
+The document presents reasons to avoid PEP8 guidelines, citing scenarios where deviating from the standard may be preferred for various reasons, such as job security or project compatibility.
+
+Document 10:
+This document summarizes David Goodger's description of PEP 8 recommendations for Python code, emphasizing conventions for function, method, attribute, variable, constant, and class names.
+
+Document 11:
+The document provides coding tips, including using tools like Black for formatting, adding docstrings to classes and modules, using descriptive variable names, employing typing, and writing unit tests for new functionality.
+
+Document 12:
+It suggests breaking down reusable functionality into standalone Python modules with an argument parser for command-line execution, emphasizing the importance of documentation and commenting code effectively.
+
+Document 13:
+The document mentions disabling certain rules of PEP8, with the major one being the line length limitation.
+
+Document 14:
+This document advises deviating from the industry standard only if it conflicts with the company standard and highlights the benefits of following PEP8 for code consistency and ease of maintenance.
+
+Document 15:
+The document discusses the impact of PyCharm in enforcing PEP8 guidelines, particularly in identifying inconsistencies like line breaks, spacing, and naming conventions.
+
+Document 16:
+It mentions the use of Google style for Java and tools like prettier for maintaining code style in JavaScript.
+
+Document 17:
+The document suggests looking into PEP8 as the universal style guide for Python developers.
+
+Document 18:
+It discusses the challenges of establishing consistent naming conventions in Python and recommends adhering to the prevailing style within a codebase for internal consistency.
+
+Document 19:
+The document emphasizes the importance of writing clean code in Python for better readability, maintainability, and collaboration among developers. It provides insights into best practices, such as using objects, polymorphism, inheritance, and proper documentation.

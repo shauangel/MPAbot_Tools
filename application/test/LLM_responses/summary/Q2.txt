@@ -1,0 +1,40 @@
+Question: Is there a source code level debugger with breakpoints, single-stepping, etc.?
+Document 0: The author explains that the process of attaching a debugger depends on the platform being used. They suggest running the code under a debugger by setting breakpoints and stepping through the code. The author also mentions that attaching a debugger to a running process may be necessary in some cases, but it is not required in the scenario described.
+
+Document 1: The document discusses the usage of Python's built-in debugger, `pdb`, which allows setting breakpoints in the code and stepping through it line by line. The author recommends using a proper IDE for debugging but mentions that `pdb` is a powerful tool even when used from the command line.
+
+Document 2: The document mentions that the process of attaching a debugger varies depending on the operating system and the debugger being used. It suggests using Win Debug for Windows and emphasizes the complexity involved in analyzing a program's behavior similar to a profiler.
+
+Document 3: The author provides a simple instruction to put a breakpoint in the code and press F5 to debug using Microsoft's debug window, eliminating the need to attach any additional debugger to the application.
+
+Document 4: The document mentions using the "trace" module in Python to print out each line of code as it executes. It gives an example of running a program with the trace module and how to filter out unnecessary information using flags.
+
+Document 5: The document clarifies that GDB is not a Python debugger but rather used for debugging the CPython interpreter executable itself. It recommends the use of PDB for debugging Python scripts unless there is a need for mixed Python/C/Cython debugging.
+
+Document 6: The author presents a simple Python function for logging and suggests using a debugger like `pdb` for further exploration of debugging practices.
+
+Document 7: The author recommends switching to an IDE like PyCharm for convenient debugging, mentioning its features like setting breakpoints and exploring code execution at specific points.
+
+Document 8: The document provides a detailed approach to running a Python script under gdb for debugging purposes, including setting breakpoints, examining backtraces, and stepping through the program.
+
+Document 9: The document suggests using the `breakpoint()` function in Python as an easier way to check values and debug code compared to adding multiple print statements.
+
+Document 10: The author mentions using Thonny's debugging feature for understanding code behavior and states the intention to switch to a proper tool like a debugger for better code analysis.
+
+Document 11: The document recommends using tools like birdseye and snoop from futurecoder.io to analyze code by going over each line.
+
+Document 12: The author advises learning how to use a debugger for better monitoring of program state during execution.
+
+Document 13: The document suggests learning how to use debuggers and provides a YouTube link for further information on debugging practices.
+
+Document 14: The author recommends using pythontutor.com for a step-by-step visualization of code execution by copying and pasting code into the editor.
+
+Document 15: The document briefly mentions a working solution for debugging in VSCode.
+
+Document 16: The author shares a detailed experience with debugging a Python script, mentioning the use of gdb and Python for troubleshooting issues within a shared library module.
+
+Document 17: The document discusses the possibility of creating a plugin or functionality for running Python scripts within Notepad++. It mentions the Python Script plugin as a promising option.
+
+Document 18: The document mentions a setting in code that makes it stop at breakpoints, affecting the debugging process.
+
+Document 19: The document discusses the use of print statements and the effectiveness of the brain in debugging code. It also mentions the importance of using the Python debugger and logging module for better code analysis and troubleshooting. The conversation delves into the debate between using print statements and debuggers for effective code debugging.

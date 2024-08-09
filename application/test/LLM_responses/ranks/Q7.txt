@@ -1,0 +1,24 @@
+Question: Is there an equivalent to Perl’s chomp() for removing trailing newlines from strings?
+I have optimized the ranking of the documents based on relevance to the question "Is there an equivalent to Perl’s chomp() for removing trailing newlines from strings?". Here is the updated ranking:
+
+1. **Document 2 (ID: 275025)**: This document directly addresses the question by suggesting the use of Python's `rstrip()` method to strip trailing whitespace, including newlines. It also provides examples of using `rstrip()`, `strip()`, and `lstrip()`.
+
+2. **Document 13 (ID: 12524345)**: This document offers various methods to remove newline characters from strings using utilities like `tr`, `Perl`, and command substitution. It covers scenarios for single and multiple newline removal.
+
+3. **Document 14 (ID: 43641128)**: This document suggests using Python's `splitlines()` method to handle different newline delimiters and provides examples of removing all newlines or just the last one.
+
+4. **Document 15 (ID: 43641376)**: It discusses the limitations of Python's `rstrip()` for multi-character newline delimiters and proposes using `join` and `splitlines` as an alternative. It also demonstrates how to remove exactly one trailing newline.
+
+5. **Document 0 (ID: 59795559)**: Although it focuses on Perl code, it offers insights into handling newlines at the beginning of files and provides alternative approaches to skip printing empty lines.
+
+6. **Document 16 (ID: 15825270)**: This document presents shell commands using Perl to remove newline characters. It includes examples for replacing control characters and handling CRLF line endings.
+
+7. **Document 17 (ID: 40750864)**: It explains a regular expression pattern in Python's `re.sub` to catch various types of line endings and mimic the behavior of `chomp`. The example provided demonstrates the usage.
+
+8. **Document 3 (ID: 12148703)**: It discusses using shell commands to remove trailing newline characters and provides recommendations based on Perl's availability.
+
+9. **Document 7 (ID: 15732890)**: While it mainly focuses on shell commands and hex dumps, it touches on the behavior of Perl's `chomp` and how it handles newline and carriage return characters.
+
+10. **Document 1 (ID: 59795703)**: This document briefly mentions reading files in Python without writing in a loop until a non-empty line is encountered, which indirectly relates to handling trailing newlines.
+
+The ranking has been optimized to highlight the documents that directly address the question or provide relevant insights into removing trailing newlines from strings in various programming languages.

@@ -1,0 +1,14 @@
+Question: What is the difference between arguments and parameters?
+Document 0-2: These documents emphasize the importance of using functions with parameters in programming. They explain how functions without parameters can be cumbersome to use, while functions with parameters make the code cleaner and more efficient. The documents also highlight the advantage of using parameters in recursive functions for better functionality.
+
+Document 3-5: These documents discuss the concept that the best functions are those without parameters, possibly in the context of using classes. They explore the idea that functions should rely on internal class properties rather than external data. The documents also mention the considerations around using static helper classes and emphasize the importance of finding the best approach based on the specific scenario.
+
+Document 6-8: These documents highlight the significance of using parameters in functions to make them more versatile and dynamic. They explain that by utilizing parameters, functions can be utilized in various scenarios, enhancing their flexibility and applicability across different use cases.
+
+Document 9-14: These documents define the terms "parameter" and "argument" in the context of method definitions in programming. They explain that parameters are variables within a method definition, while arguments are the values passed into the parameters when a method is called.
+
+Document 15-17: These documents discuss the use of optional parameters and method overloading in C# programming. They explain the differences between these approaches and provide insights into when to use optional parameters versus method overloading based on the specific requirements of the code.
+
+Document 18: This document clarifies the distinction between parameters and arguments in a method definition. It explains that parameters are variables within the function definition, while arguments are the values passed into the function when it is called.
+
+Document 19: This document provides guidance on when to use optional parameters versus method overloading in programming. It discusses potential issues with optional parameters, such as auto-initialization of certain types, and suggests strategies to handle such scenarios effectively. The document also touches on the use of the "params" keyword and the importance of minimizing the use of optional parameters for cleaner code.
