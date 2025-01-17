@@ -19,7 +19,7 @@ The project is implemented with Python3.8 and Flask framework.
 - [Parser: CodeProject](https://github.com/shauangel/MPAbot_CodeProjectParser)
 
 ### Experiment Data
-
+The system efficiency experiments are based on 20 testing questions in file ** application/test/samples.json**
 
 
 
